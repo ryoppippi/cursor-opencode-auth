@@ -6,7 +6,7 @@ An OpenAI-compatible proxy server that lets you use Cursor's AI models (composer
 
 ## Requirements
 
-- **Node.js 18+**
+- **Node.js 18 (optional, if you run script with opencode, you don't need Node)**
 - **macOS** (uses Keychain for token storage)
 - **Cursor CLI** installed and logged in - [Install here](https://cursor.com/cli) (the proxy uses your Cursor auth token)
 
@@ -21,6 +21,9 @@ cursor-proxy
 
 # Or run directly with npx
 npx cursor-opencode-auth
+
+# Or run with opencode (no need node/bun)
+BUN_BE_BUN=1 opencode x cursor-opencode-auth
 
 # Or clone and run
 git clone https://github.com/R44VC0RP/cursor-opencode-auth
